@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Courses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .courses-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            width: 100%; 
+            box-sizing: border-box; 
+        }
+        .course-card {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none; 
+            color: inherit; 
+        }
+        .course-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .course-description {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+        .course-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="courses-container">
+        <a href="https://www.youtube.com/watch?v=HVjjoMvutj4" class="course-card">
+            <img class="course-image" src="WD.jpg" alt="Web Development">
+            <h2 class="course-title">Web Development</h2>
+            <p class="course-description">Learn to build modern websites using HTML, CSS, and JavaScript.</p>
+            <a href="https://www.w3schools.com/">Web Development Quiz</a> 
+        </a>
+        <br>
+        
+        <a href="https://www.youtube.com/watch?v=6USOEP1d9HA" class="course-card">
+            <img class="course-image" src="Data Science.png" alt="Data Science">
+            <h2 class="course-title">Data Science</h2>
+            <p class="course-description">Explore data analysis, machine learning, and data visualization techniques.</p>
+            <a href="Data Science Quiz.html">Data Science Quiz</a> 
+        </a>
+        <br>
+        
+        <a href="https://www.youtube.com/watch?v=y501KkJGsOY" class="course-card">
+            <img class="course-image" src="Graphicdesign.jpg" alt="Graphic Design">
+            <h2 class="course-title">Graphic Design</h2>
+            <p class="course-description">Master the art of creating stunning visual content and designs.</p>
+            <a href="https://www.w3schools.com/">Graphic Design Quiz</a> 
+        </a>
+        <br>
+        <a href="https://www.youtube.com/watch?v=XKHEtdqhLK8" class="course-card">
+            <img class="course-image" src="Python.png" alt="Python Course">
+            <h2 class="course-title">Python Course</h2>
+            <p class="course-description">Learn programming with Python and build versatile applications.</p>
+            <a href="https://www.w3schools.com/">Python Course Quiz</a> 
+        </a>
+        <br>
+        <a href="https://www.youtube.com/watch?v=8jLOx1hD3_o" class="course-card">
+            <img class="course-image" src="C++.jpg" alt="C++ Course">
+            <h2 class="course-title">C++ Course</h2>
+            <p class="course-description">Explore object-oriented programming using C++ for software development.</p>
+            <a href="https://www.w3schools.com/">C++ Course Quiz</a> 
+        </a>
+        <br>
+        <a href="https://www.youtube.com/watch?v=87SH2Cn0s9Ac" class="course-card">
+            <img class="course-image" src="C.jpg" alt="C Course">
+            <h2 class="course-title">C Course</h2>
+            <p class="course-description">Beginner-friendly course to learn the fundamentals of the C programming language.</p>
+            <a href="https://www.w3schools.com/">C Course Quiz</a> 
+        </a>
+        <br>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Data Science Quiz</title>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Data Science Quiz</h1>
+        <form id="quiz-form">
+            <!-- Question 1 -->
+            <p>1. What is the process of cleaning and organizing raw data into a usable format called?</p>
+            <label><input type="radio" name="q1" value="a"> Data Analysis</label><br>
+            <label><input type="radio" name="q1" value="b"> Data Visualization</label><br>
+            <label><input type="radio" name="q1" value="c"> Data Preprocessing</label><br>
+
+            <!-- Question 2 -->
+            <p>2. Which programming language is commonly used for data analysis and machine learning?</p>
+            <label><input type="radio" name="q2" value="a"> Python</label><br>
+            <label><input type="radio" name="q2" value="b"> Java</label><br>
+            <label><input type="radio" name="q2" value="c"> C++</label><br>
+
+            <!-- Question 3 -->
+            <p>3. What is the term for the process of training a machine learning model using historical data?</p>
+            <label><input type="radio" name="q3" value="a"> Data Mining</label><br>
+            <label><input type="radio" name="q3" value="b"> Model Validation</label><br>
+            <label><input type="radio" name="q3" value="c"> Supervised Learning</label><br>
+
+            <!-- Question 4 -->
+            <p>4. What type of analysis is used to uncover patterns and relationships in large datasets?</p>
+            <label><input type="radio" name="q4" value="a"> Descriptive Analysis</label><br>
+            <label><input type="radio" name="q4" value="b"> Inferential Analysis</label><br>
+            <label><input type="radio" name="q4" value="c"> Exploratory Data Analysis</label><br>
+
+            <!-- Question 5 -->
+            <p>5. What is the term for the process of making predictions based on data using machine learning models?</p>
+            <label><input type="radio" name="q5" value="a"> Data Classification</label><br>
+            <label><input type="radio" name="q5" value="b"> Data Clustering</label><br>
+            <label><input type="radio" name="q5" value="c"> Predictive Modeling</label><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const quizForm = document.getElementById("quiz-form");
+            quizForm.addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                const correctAnswers = ["c", "a", "c", "c", "c"];
+                const userAnswers = [
+                    quizForm.q1.value,
+                    quizForm.q2.value,
+                    quizForm.q3.value,
+                    quizForm.q4.value,
+                    quizForm.q5.value
+                ];
+
+                let score = 0;
+                for (let i = 0; i < userAnswers.length; i++) {
+                    if (userAnswers[i] === correctAnswers[i]) {
+                        score++;
+                    }
+                }
+
+                const resultContainer = document.createElement("div");
+                resultContainer.className = "result";
+                resultContainer.innerHTML = `<h2>Your Score: ${score}/${correctAnswers.length}</h2>`;
+                quizForm.appendChild(resultContainer);
+
+                // Disable form submission after showing result
+                quizForm.removeEventListener("submit", arguments.callee);
+            });
+        });
+    </script>
+</body>
+</html>

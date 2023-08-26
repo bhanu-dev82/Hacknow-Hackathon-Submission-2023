@@ -1,18 +1,26 @@
-# HackNow-Hackathon-Submission-2023
-![Black Elegant Personal LinkedIn Banner (2)](https://github.com/IEEE-CS-GHRCE/Hacknow-Hackathon-Submission-2023/assets/139680254/dac49653-9ab8-42ea-bb6d-758d832b29e8)
 
-# Please Fork this Repository
-## Github Guidelins
-* Repository must be public. 
-* Must include readme file in it having summary of your project. 
-* Participants to write clear and descriptive Line of code. 
-* Stress the importance of documenting the code, including inline comments and high-level documentation Clearly communicate the deadline for submitting your projects.
-* Upload all your Project files in This repository
-  
+    Team Name : Iterators
+    Members Name : Arundhati Rothe, Ashiya Thakur, Aditya Chikte, Bhanu Nagpure
+    Description : Given below
+    Please add Steps : Given below
 
-# Format of README file
-* Team Name : [TEAM NAME]
-* Members Name : [Member 1] [Member 2] [Member 3] etc...
-* Description : [Description]
-* Please add Steps : How to Run the Program with Commands.
+# EduQuiz
+
+EduQuiz is a web application that facilitates collaborative learning through interactive quizzes and challenges. It allows users to create and participate in quizzes, track their progress, and engage in real-time collaboration with other users.
+
+## Technologies Used
+
+- HTML, CSS, JavaScript: Frontend development.
+
+## Installation
+
+1. Clone the repository: `git clone https://github.com/bhanu-dev82/eduquiz.git`
+2. run index.html
+
+## Contributing
+
+Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
 
